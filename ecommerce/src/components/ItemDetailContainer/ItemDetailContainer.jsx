@@ -27,7 +27,9 @@ function ItemDetailContainer() {
     return(
         <>
       {loader 
-        ? <h4 className="text-loader">Cargando detalles...</h4> 
+        ? <div className="containerGral">
+        <div className="text-loader"></div>
+      </div> 
         : <ItemDetail {...product} />
       }
     </>

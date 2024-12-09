@@ -3,6 +3,9 @@ import { useCart } from "../../hooks/useCart";
 import { db } from "../../services/firebase";
 import { addDoc, collection, documentId, getDocs, query, where, writeBatch } from "firebase/firestore";
 import { useState } from "react";
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
+
 
 
 export default function Checkout() {
@@ -13,6 +16,7 @@ export default function Checkout() {
 
 
   const [orderCreated, setOrderCreated] = useState(false)
+  const navigate = useNavigate();
   
   const {cart, totalQuantity, getTotal, clearCart} = useCart()
   const total = getTotal()
@@ -60,12 +64,25 @@ export default function Checkout() {
         await batch.commit();
         const orderRef = collection(db, "orders")
         const orderAdded = await addDoc(orderRef, objOrder);
-        console.log(`El id de su orden es ${orderAdded.id}`);
+        Swal.fire({
+          title: 'Su pedido fue creado con éxito',
+          text: `El id de su orden es ${orderAdded.id}`,
+          icon: 'success',
+          confirmButtonText: 'Ver más productos'
+        }).then(() => {
+          navigate('/'); // Redirige a la pantalla principal
+        });
+        
         clearCart()
         setOrderCreated(true)
 
       }else {
-        console.log("Hay productos fuera de stock")
+        Swal.fire({
+          title: 'Error',
+          text: 'Es posible que no haya stock de alguno de los productos.',
+          icon: 'error',
+          confirmButtonText: 'Aceptar'
+        });
       }
   }
 

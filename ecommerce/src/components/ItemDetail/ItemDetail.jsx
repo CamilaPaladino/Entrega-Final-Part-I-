@@ -25,7 +25,7 @@ function ItemDetail({id, name, img, description, price, stock }) {
           <div className="contador">
             {
               isInCart(id) ? (
-                <Link to="/cart" className="btn-al-carrito">Ir al carrito</Link>
+                <Link to="/cart" className="btn-primario btn-green">Ir al carrito</Link>
               ):
               (
                 <ItemCount stock={stock} onAdd={ handleAdd } />

@@ -1,6 +1,36 @@
+.title-cart{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 .containerGral.carrito h1{
     color: #616161;
     font-size: 24px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.containerGral.carrito h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn-trash{
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.btn-trash svg{
+    width: 20px;
+    height: 20px;
+    fill: #616161;
+    transition: all ease .3s;
+}
+
+.btn-trash:hover svg{
+    fill: #e27166;
 }
 
 .CardCartItem{

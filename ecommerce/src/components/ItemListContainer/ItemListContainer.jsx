@@ -14,20 +14,17 @@ function ItemListContainer({greatings}) {
 
     if (loading) {
       return (
-        <h4
-         className="text-loader"
-        >
-          Cargando productos...
-        </h4>
+        <div className="containerGral">
+          <div className="text-loader"></div>
+        </div>
       );
     }
 
     if (error) {
       return (
-        <h4 className="text-loader"
-        >
-          Error al cargar los productos
-        </h4>
+        <div className="containerGral">
+          <div className="text-loader"></div>
+        </div>
       );
     }
 

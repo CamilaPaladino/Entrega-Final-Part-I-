@@ -1,15 +1,16 @@
 import cart from "../../images/cart.png"
 import { useCart } from "../../hooks/useCart";
+import { Link } from 'react-router-dom';
 
 function CartWidget() {
   const {totalQuantity} = useCart();
   return (
-    <a href="#" className="cart">
+    <Link to="/cart" href="#" className="cart">
       <img src={cart} alt="" />
       <div className="buble">
         <span>{totalQuantity}</span>
       </div>
-    </a>
+    </Link>
   )
 }
 

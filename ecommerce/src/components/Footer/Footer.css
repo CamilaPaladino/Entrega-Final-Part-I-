@@ -1,0 +1,30 @@
+
+
+footer{
+    background-color: #000000 !important;
+    padding: 15px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+footer p svg{
+    height: 24px;
+    width: 24px;
+    fill: #ffffff;
+    margin-left: 10px;
+    transition: all ease .3s;
+    font-size: 13px;
+}
+
+footer p a:hover svg{
+    fill: #efaf56;
+}

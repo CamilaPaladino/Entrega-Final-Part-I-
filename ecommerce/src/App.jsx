@@ -8,6 +8,8 @@ import { NotificationProvider } from "./context/NotificationContext";
 
 import Cart from "./components/Cart/Cart"
 import Checkout from "./components/Checkout/Checkout";
+import Footer from './components/Footer/Footer';
+
 
 function App() {
 
@@ -16,14 +18,18 @@ function App() {
       <CartProvider>
         <NotificationProvider>
         <NavBar/>
-        <Routes>
-          <Route path="/" element={<ItemListContainer greatings="Todos los productos"/>}/>
-          <Route path="/category/:categoryId" element={<ItemListContainer/>}/>
-          <Route path="/detail/:productId" element={<ItemDetailContainer/>}/>
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/checkout" element={<Checkout />} />
-          <Route path="*" element={<h1>:( 404 Not found</h1>} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<ItemListContainer greatings="Todos los productos"/>}/>
+            <Route path="/category/:categoryId" element={<ItemListContainer/>}/>
+            <Route path="/detail/:productId" element={<ItemDetailContainer/>}/>
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="*" element={<div className="containerGral error">
+              <h1>404</h1>
+              <p>Error not found</p>
+            </div>} />
+          </Routes>
+          <Footer /> 
         </NotificationProvider>
       </CartProvider>
     </BrowserRouter>
