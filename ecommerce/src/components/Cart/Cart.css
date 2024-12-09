@@ -1,0 +1,79 @@
+.containerGral.carrito h1{
+    color: #616161;
+    font-size: 24px;
+}
+
+.CardCartItem{
+    box-shadow: 0px 0px 18px -8px rgba(102, 93, 93, 1);
+    -webkit-box-shadow: 0px 0px 18px -8px rgba(102, 93, 93, 1);
+    -moz-box-shadow: 0px 0px 18px -8px rgba(102, 93, 93, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.CardCartItem .left.carrito{
+    box-shadow: none;
+    width: calc(100% - 80px);
+}
+
+.CardCartItem .left.carrito h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.CardCartItem .left.carrito p{
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #616161;
+    line-height: 130%;
+}
+
+.CardCartItem .left.carrito hr{
+    background-color: solid 1px #cecece;
+    height: 1px;
+    width: 160px;
+    margin: 10px 0 !important;
+}
+
+.CardCartItem .left.carrito p.subtotal{
+    font-size: 14px;
+}
+
+.CardCartItem .right.carrito{
+    width: 80px;
+}
+
+.CardCartItem .btn-remove{
+    border: solid 1px #616161;
+    border-radius: 2px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 100%;
+    font-size: 18px;
+    transition: all ease .3s;
+}
+
+.CardCartItem .btn-remove:hover{
+    background-color: #ffffff;
+    font-weight: 600;
+}
+
+.containerGral.carrito.no-items{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: calc(100vh - 65px);
+
+}
+
+.containerGral.carrito.no-items img{
+    max-width: 220px;
+    margin: 0 auto 20px ;
+}

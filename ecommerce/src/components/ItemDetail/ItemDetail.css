@@ -1,0 +1,80 @@
+.containerGral.detail{
+    display: flex;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto
+}
+
+.containerGral .left{
+    width: 40%;
+    padding: 35px;
+    box-shadow: 0px 0px 18px -8px rgba(102, 93, 93, 1);
+    -webkit-box-shadow: 0px 0px 18px -8px rgba(102, 93, 93, 1);
+    -moz-box-shadow: 0px 0px 18px -8px rgba(102, 93, 93, 1);
+
+}
+
+.containerGral .left img{
+    max-width: 100%;
+}
+
+.containerGral .right{
+    width: 60%;
+    padding: 30px;
+}
+
+.containerGral .right h1{
+    margin-bottom: 20px;
+}
+
+.containerGral .right p.text{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: solid 1px #d0d0d0;
+}
+
+.containerGral .right p.precio{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.containerGral .right .contador .botones button{
+    border: solid 1px #efaf56;
+    background-color: #ffffff;
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: all ease .3s;
+}
+
+.containerGral .right .contador .botones button.agregar{
+    background-color: #efaf56;
+    color: #ffffff;
+}
+
+.containerGral .right .contador .botones button:hover{
+    background-color: #efaf5670;
+    color: #000000;
+}
+
+.containerGral .right .count{
+    font-size: 12px;
+}
+
+.btn-al-carrito{
+    border: solid 1px #efaf56;
+    background-color: #efaf56;
+    color: #ffffff;
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all ease .3s;
+}
+
+.btn-al-carrito:hover{
+    background-color: #efaf5670;
+    color: #000000;
+}

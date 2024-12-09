@@ -8,6 +8,7 @@
 
 .containerGral{
     padding: 80px 60px;
+    min-height: calc(100vh - 65px);
 }
 
 nav{
@@ -68,11 +69,9 @@ nav .cart .buble{
 
 nav .cart .buble span{
     font-size: 14px;
-}
-
-nav .cart .buble span:hover{
     color: #ffffff;
 }
+
 
 main{
     display: flex;
@@ -158,5 +157,4 @@ main h1{
     top: 80px;
     font-size: 22px;
     font-weight: 400;
-
 }
