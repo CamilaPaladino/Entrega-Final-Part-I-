@@ -70,7 +70,7 @@ export default function Checkout() {
           icon: 'success',
           confirmButtonText: 'Ver más productos'
         }).then(() => {
-          navigate('/'); // Redirige a la pantalla principal
+          navigate('/'); 
         });
         
         clearCart()

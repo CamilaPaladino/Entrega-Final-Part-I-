@@ -29,7 +29,7 @@ export const getProducts = (categoryId) => {
 }
 
 export const getProductById = (itemId) => {
-const productDoc = doc(db, "products", itemId);
+  const productDoc = doc(db, "products", itemId);
 
 return getDoc(productDoc)
   .then((queryDocumentSnapshot) => {

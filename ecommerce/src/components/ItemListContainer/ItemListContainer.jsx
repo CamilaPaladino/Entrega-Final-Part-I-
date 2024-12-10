@@ -8,9 +8,8 @@ import { useAsync } from "../../hooks/UseAsync"
 function ItemListContainer({greatings}) {
     const {categoryId} = useParams()
     const  asyncFunction = () => getProducts(categoryId)
-    
-    const {data: products, loading, error} = useAsync(asyncFunction)
 
+    const {data: products, loading, error} = useAsync(asyncFunction, [categoryId])
 
     if (loading) {
       return (
@@ -30,6 +29,7 @@ function ItemListContainer({greatings}) {
 
 
   return (
+      
       <div className="containerGral mb-3">
         <h2 className="text-center mb-5">{greatings}</h2>
         <ItemList products={products} />
