@@ -1,6 +1,7 @@
 # E-commerce React - Proyecto Final Coderhouse<br><br>
 
-_Este repositorio contiene el proyecto final del curso de React de Coderhouse. Se trata de una aplicación de e-commerce que incluye funcionalidades clave como filtrado de productos, gestión de un carrito de compras y un sistema de checkout, utilizando Firebase como backend para la gestión de datos._<br><br>
+_Este repositorio contiene el proyecto final del curso de React de Coderhouse. Se trata de una aplicación de e-commerce que incluye funcionalidades clave como filtrado de productos, gestión de un carrito de compras y un sistema de checkout, utilizando Firebase como backend para la gestión de datos._<br>
+<a href="https://gleaming-fox-0d6c3e.netlify.app/" target="_blank">Ver deploy</a>
 
 ## Características principales 🚀<br>
 
